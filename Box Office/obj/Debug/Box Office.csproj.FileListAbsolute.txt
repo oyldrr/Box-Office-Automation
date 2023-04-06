@@ -1,0 +1,42 @@
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\Box Office.exe.config
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\Box Office.exe
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\Box Office.pdb
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box Office.csproj.AssemblyReference.cache
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box Office.csproj.SuggestedBindingRedirects.cache
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.main.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.Properties.Resources.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box Office.csproj.GenerateResource.cache
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box Office.csproj.CoreCompileInputs.cache
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box Office.exe
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box Office.pdb
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box Office.csproj.CopyComplete
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.customers.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.movies.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.sessions.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\Google.Protobuf.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\MySql.Data.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Buffers.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Memory.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\Google.Protobuf.pdb
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\Google.Protobuf.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\MySql.Data.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Buffers.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Memory.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.addSessionForm.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.addCustomerForm.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.addMovieForm.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.UpdateOrDelete.resources
