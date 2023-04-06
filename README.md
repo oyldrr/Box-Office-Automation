@@ -41,20 +41,13 @@ Here is the color palette I used for this project, listed from darkest to lighte
 - rgb(165, 215, 232) / #A5D7E8
 
 ## Screenshots
+![Ekran görüntüsü 2023-04-06 054401](https://user-images.githubusercontent.com/84236077/230260714-a25a0bba-041f-4366-8417-398a212a8351.png)
+![Ekran görüntüsü 2023-04-06 054413](https://user-images.githubusercontent.com/84236077/230260736-a276a677-6c99-4b27-a522-f46f2239c3fa.png)
+![Ekran görüntüsü 2023-04-06 054422](https://user-images.githubusercontent.com/84236077/230260763-8ba749c4-f86c-4639-b934-6aa5e36f8325.png)
+![Ekran görüntüsü 2023-04-06 054441](https://user-images.githubusercontent.com/84236077/230260802-c25f7ac1-7dbc-4880-a54c-44ecbba385d1.png)
+![Ekran görüntüsü 2023-04-06 054452](https://user-images.githubusercontent.com/84236077/230260814-58a51375-7e5d-4a7b-95b5-b109b0bd5c4c.png)
+![Ekran görüntüsü 2023-04-06 054920](https://user-images.githubusercontent.com/84236077/230260828-7624a907-af93-477e-9e4a-ed738ee8efb0.png)
 
-![Ekran görüntüsü 2023-04-06 054246.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ccb2219a-3e73-40b9-a28e-f40c845436da/Ekran_grnts_2023-04-06_054246.png)
-
-![Ekran görüntüsü 2023-04-06 054349.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b0408178-2868-408c-9fb6-84c2fb3a1367/Ekran_grnts_2023-04-06_054349.png)
-
-![Ekran görüntüsü 2023-04-06 054413.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/33c49184-1abd-439b-9dd1-a92b3c573b3d/Ekran_grnts_2023-04-06_054413.png)
-
-![Ekran görüntüsü 2023-04-06 054422.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/72835b74-9824-48c6-8fc6-f194e0c8f923/Ekran_grnts_2023-04-06_054422.png)
-
-![Ekran görüntüsü 2023-04-06 054441.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8e1b7aad-107f-44bc-b8de-5f03c40f6954/Ekran_grnts_2023-04-06_054441.png)
-
-![Ekran görüntüsü 2023-04-06 054452.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/027bc935-2410-4a69-88d2-c31ccd78605a/Ekran_grnts_2023-04-06_054452.png)
-
-![Ekran görüntüsü 2023-04-06 054920.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61ad71ac-94e5-410d-bdcb-56f91cb2af6a/Ekran_grnts_2023-04-06_054920.png)
 
 ## License
 
