@@ -26,7 +26,47 @@ namespace Box_Office
 
         private void addSessionForm_Load(object sender, EventArgs e)
         {
-            
+            string connectionString = "server=localhost;port=3306;database=boxoffice;user=root;password=password;";
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            connection.Open();
+
+            // Movies to movie drop down
+            string query = "SELECT * FROM movies";
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                string id = dataReader["id"].ToString();
+                string name = dataReader["name"].ToString();
+                string age_restriction = dataReader["age_restriction"].ToString();
+                string year = dataReader["year"].ToString(); 
+                movieComboBox.Items.Add(id + " " + name + " " + age_restriction + " " + year);
+            }
+            dataReader.Close();
+            //
+
+            // customers to customer drop down
+            string query2 = "SELECT * FROM customers";
+            MySqlCommand cmd2 = new MySqlCommand(query2, connection);
+
+            MySqlDataReader dataReader2 = cmd2.ExecuteReader();
+
+            while (dataReader2.Read())
+            {
+                string fullname = dataReader2["fullname"].ToString();
+                string id = dataReader2["id"].ToString();
+                string age = dataReader2["age"].ToString();
+                string gender = dataReader2["gender"].ToString();
+                string tel = dataReader2["tel"].ToString();
+                customerComboBox.Items.Add(id + " " + fullname + " " + age + " " + gender + " " + tel);
+            }
+            dataReader.Close();
+            //
+
+            connection.Close();
+
         }
 
         private void saveButton_Click(object sender, EventArgs e)

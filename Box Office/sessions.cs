@@ -24,7 +24,7 @@ namespace Box_Office
             form.ShowDialog();
         }
 
-        // Load Functions
+        // Loading Functions
         private void sessions_Load(object sender, EventArgs e)
         {
             string connectionString = "server=localhost;port=3306;database=boxoffice;user=root;password=password;";
@@ -86,7 +86,7 @@ namespace Box_Office
                     label.MouseClick += (sender3, e3) =>
                     {
                         main.selectedId = Convert.ToInt32(row["id"]);
-                        main.selectedTable = "customers";
+                        main.selectedTable = "sessions";
                         UpdateOrDelete form = new UpdateOrDelete();
                         form.ShowDialog();
                     };
@@ -109,6 +109,8 @@ namespace Box_Office
             }
         }
 
+
+        // Searching Functions
         private void searchButton_Click(object sender, EventArgs e)
         {
             if (search.Text != " " || search.Value > 0)
@@ -162,5 +164,6 @@ namespace Box_Office
 
             }
         }
+        //
     }
 }

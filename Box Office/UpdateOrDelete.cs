@@ -25,12 +25,13 @@ namespace Box_Office
 
             try
             {
-                string query = "'delete from boxoffice."+main.selectedTable+" where "+main.selectedTable+".id = "+main.selectedId+"'";
+                string query = "delete from boxoffice."+main.selectedTable+" where "+main.selectedTable+".id = "+main.selectedId+"";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 MySqlDataReader reader;
                 connection.Open();
                 reader = command.ExecuteReader();
                 MessageBox.Show("Record deleted from database.", "Successfully!");
+                this.Close();
                 while (reader.Read())
                 {
 
