@@ -40,3 +40,17 @@ C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.addSessio
 C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.addCustomerForm.resources
 C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.addMovieForm.resources
 C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.UpdateOrDelete.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.updateForm.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\obj\Debug\Box_Office.printInvoice.resources
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\BarcodeStandard.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Drawing.Common.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Text.Json.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.ValueTuple.dll
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Text.Json.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\oyldr\source\repos\Box Office\Box Office\bin\Debug\System.ValueTuple.xml

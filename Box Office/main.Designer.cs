@@ -62,7 +62,7 @@
             this.versionLabel.Name = "versionLabel";
             this.versionLabel.Size = new System.Drawing.Size(179, 39);
             this.versionLabel.TabIndex = 5;
-            this.versionLabel.Text = "VERSION BO1.0\r\nCopyrights reserved by oyldrr @2023\r\n\r\n";
+            this.versionLabel.Text = "VERSION BO2.0\r\nCopyrights reserved by oyldrr @2023\r\n\r\n";
             this.versionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.versionLabel.Click += new System.EventHandler(this.versionLabel_Click);
             this.versionLabel.MouseLeave += new System.EventHandler(this.versionLabel_MouseLeave);
@@ -138,13 +138,15 @@
             this.logo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logo.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.logo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(215)))), ((int)(((byte)(232)))));
-            this.logo.Location = new System.Drawing.Point(40, 9);
+            this.logo.Location = new System.Drawing.Point(39, 18);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(111, 106);
             this.logo.TabIndex = 1;
             this.logo.Text = "Box\r\nOffice";
             this.logo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.logo.Click += new System.EventHandler(this.logo_Click);
+            this.logo.MouseEnter += new System.EventHandler(this.logo_MouseEnter);
+            this.logo.MouseLeave += new System.EventHandler(this.logo_MouseLeave);
             // 
             // mainPanel
             // 

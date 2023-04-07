@@ -34,35 +34,35 @@ namespace Box_Office
             string query = "SELECT * FROM movies";
             MySqlCommand cmd = new MySqlCommand(query, connection);
 
-            MySqlDataReader dataReader = cmd.ExecuteReader();
+            MySqlDataReader row = cmd.ExecuteReader();
 
-            while (dataReader.Read())
+            while (row.Read())
             {
-                string id = dataReader["id"].ToString();
-                string name = dataReader["name"].ToString();
-                string age_restriction = dataReader["age_restriction"].ToString();
-                string year = dataReader["year"].ToString(); 
+                string id = row["id"].ToString();
+                string name = row["name"].ToString();
+                string age_restriction = row["age_restriction"].ToString();
+                string year = row["year"].ToString(); 
                 movieComboBox.Items.Add(id + " " + name + " " + age_restriction + " " + year);
             }
-            dataReader.Close();
+            row.Close();
             //
 
             // customers to customer drop down
-            string query2 = "SELECT * FROM customers";
-            MySqlCommand cmd2 = new MySqlCommand(query2, connection);
+            query = "SELECT * FROM customers";
+            cmd = new MySqlCommand(query, connection);
 
-            MySqlDataReader dataReader2 = cmd2.ExecuteReader();
+            row = cmd.ExecuteReader();
 
-            while (dataReader2.Read())
+            while (row.Read())
             {
-                string fullname = dataReader2["fullname"].ToString();
-                string id = dataReader2["id"].ToString();
-                string age = dataReader2["age"].ToString();
-                string gender = dataReader2["gender"].ToString();
-                string tel = dataReader2["tel"].ToString();
+                string fullname = row["fullname"].ToString();
+                string id = row["id"].ToString();
+                string age = row["age"].ToString();
+                string gender = row["gender"].ToString();
+                string tel = row["tel"].ToString();
                 customerComboBox.Items.Add(id + " " + fullname + " " + age + " " + gender + " " + tel);
             }
-            dataReader.Close();
+            row.Close();
             //
 
             connection.Close();
@@ -71,10 +71,33 @@ namespace Box_Office
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            int movie = movieComboBox.SelectedIndex;
-            int customer = customerComboBox.SelectedIndex;
+            // Parsing the text to get id of movie 
+            string selectedItemText = movieComboBox.SelectedItem.ToString();
+            int firstSpaceIndex = selectedItemText.IndexOf(" ");
+            string integerString = selectedItemText.Substring(0, firstSpaceIndex);
+            int movieId = int.Parse(integerString);
+            //
+
+            // Parsing the text to get id of customer
+            selectedItemText = customerComboBox.SelectedItem.ToString();
+            firstSpaceIndex = selectedItemText.IndexOf(" ");
+            integerString = selectedItemText.Substring(0, firstSpaceIndex);
+            int customerId = int.Parse(integerString);
+            //
+
+            // Setting variables to use later
+            int movie = movieId;
+            int customer = customerId;
             DateTime date = datePicker.Value;
             string price = priceComboBox.Text;
+
+            Random random = new Random();
+            string barcode = "";
+            for (int i = 1; i <= 11; i++)
+            {
+                barcode = random.Next(0, 9) + barcode;
+            }
+            //
 
             if (movie < 0 || customer < 0 || price == "")
             {
@@ -89,12 +112,13 @@ namespace Box_Office
                 try
                 {
                     connection.Open();
-                    string query = "INSERT INTO sessions (movie, customer, date, price) VALUES (@val1, @val2, @val3, @val4)";
+                    string query = "INSERT INTO sessions (movie, customer, date, price, barcode) VALUES (@val1, @val2, @val3, @val4, @val5)";
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@val1", movie);
                     command.Parameters.AddWithValue("@val2", customer);
                     command.Parameters.AddWithValue("@val3", date);
                     command.Parameters.AddWithValue("@val4", price);
+                    command.Parameters.AddWithValue("@val5", barcode);
                     command.ExecuteNonQuery();
                     MessageBox.Show("New session record succesfully created!", "Done");
                     this.Close();

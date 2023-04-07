@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media;
 using MySql.Data.MySqlClient;
 
 namespace Box_Office
@@ -33,8 +34,9 @@ namespace Box_Office
             try
             {
                 connection.Open();
+
                 string query = "SELECT * FROM sessions";
-                MySqlCommand command = new MySqlCommand(query, connection);
+                MySqlCommand command  = new MySqlCommand(query, connection);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(command);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
@@ -43,10 +45,34 @@ namespace Box_Office
                 int y = 10;
                 foreach (DataRow row in dataTable.Rows)
                 {
+                    // get movie data
+                    query = "select id, name, age_restriction, year from movies where id =" + row["movie"].ToString();
+                    command = new MySqlCommand(query, connection);
+                    MySqlDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    string movie = "#" + reader["id"].ToString() + " " +
+                            reader["name"].ToString() + " " + 
+                            reader["age_restriction"].ToString() + " " +
+                            reader["year"].ToString(); 
+                    reader.Close();
+
+                    // get customer data 
+                    query = "select id, fullname, age, gender, tel from customers where id = " + row["customer"].ToString();
+                    command = new MySqlCommand(query, connection);
+                    reader = command.ExecuteReader();
+                    reader.Read();
+                    string customer = "#" + reader["id"].ToString() + " " +
+                            reader["fullname"].ToString() + " " +
+                            reader["age"].ToString() + " " +
+                            reader["gender"].ToString() + " " + 
+                            reader["tel"].ToString();
+                    reader.Close();
+
+                    // panel creating and styling
                     Panel panel = new Panel();
                     panel.BorderStyle = BorderStyle.None;
-                    panel.BackColor = Color.FromArgb(87, 108, 188);
-                    panel.Size = new Size(400, 225);
+                    panel.BackColor = System.Drawing.Color.FromArgb(11, 36, 71);
+                    panel.Size = new Size(400, 220);
                     panel.Location = new Point(x, y);
                     panel.Cursor = Cursors.Hand;
 
@@ -62,12 +88,44 @@ namespace Box_Office
                     panel.Region = new System.Drawing.Region(path);
                     // 
 
+                    // print invoice button creating and settings
+                    Button button = new Button();
+                    button.Size = new Size((int)panel.Width, 30);
+                    button.FlatStyle = FlatStyle.Flat;
+                    button.FlatAppearance.BorderSize = 0;
+                    button.Text = "Print Invoice";
+                    button.ForeColor = System.Drawing.Color.FromArgb(165, 215, 232);
+                    button.BackColor = System.Drawing.Color.FromArgb(11, 36, 71);
+
+                    button.MouseClick += (sender3, e3) =>
+                    {
+                        main.selectedId = Convert.ToInt32(row["id"]);
+                        main.selectedTable = "sessions";
+                        printInvoice form = new printInvoice();
+                        form.ShowDialog();
+                    };
+
+                    button.MouseEnter += (sender1, e1) =>
+                    {
+                        button.BackColor = System.Drawing.Color.FromArgb(87, 108, 188);
+                    };
+
+                    button.MouseLeave += (sender2, e2) =>
+                    {
+                        button.BackColor = System.Drawing.Color.FromArgb(11, 36, 71);
+                    };
+
+                    panel.Controls.Add(button);
+                    //
+
+
                     // label creating and settings
                     Label label = new Label();
-                    label.Size = new Size((int)panel.Width, (int)panel.Height);
+                    label.Size = new Size((int)panel.Width, panel.Height + button.Height);
+                    label.Padding = new Padding(0, button.Height+5, 0, 0);
                     label.Text = "Id: " + row["id"].ToString() + "\n" +
-                                 "Movie: " + row["movie"].ToString() + "\n" +
-                                 "Customer: " + row["customer"].ToString() + "\n" +
+                                 "Movie: " + movie + "\n" +
+                                 "Customer: " + customer + "\n" +
                                  "Date: " + row["date"].ToString() + "\n" +
                                  "Price: " + row["price"].ToString() + "\n" +
                                  "Created at: " + row["created_at"].ToString() + "\n" +
@@ -75,12 +133,12 @@ namespace Box_Office
 
                     label.MouseEnter += (sender1, e1) =>
                     {
-                        label.BackColor = Color.FromArgb(11, 36, 71);
+                        label.BackColor = System.Drawing.Color.FromArgb(87, 108, 188);
                     };
 
                     label.MouseLeave += (sender2, e2) =>
                     {
-                        label.BackColor = Color.FromArgb(87, 108, 188);
+                        label.BackColor = System.Drawing.Color.FromArgb(11, 36, 71);
                     };
 
                     label.MouseClick += (sender3, e3) =>
@@ -94,6 +152,7 @@ namespace Box_Office
                     panel.Controls.Add(label);
                     //
 
+                    
                     y += panel.Height + 10;
 
                     cardViewPanel.Controls.Add(panel);

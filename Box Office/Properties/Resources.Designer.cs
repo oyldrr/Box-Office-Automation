@@ -83,6 +83,16 @@ namespace Box_Office.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap kh9okhs4bu4154gn71tl9krujb {
+            get {
+                object obj = ResourceManager.GetObject("kh9okhs4bu4154gn71tl9krujb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap wave_haikei {
             get {
                 object obj = ResourceManager.GetObject("wave-haikei", resourceCulture);

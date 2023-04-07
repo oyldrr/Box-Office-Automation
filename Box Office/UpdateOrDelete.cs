@@ -47,5 +47,11 @@ namespace Box_Office
                 connection.Close();
             }
         }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            updateForm form = new updateForm();
+            form.ShowDialog();
+        }
     }
 }
