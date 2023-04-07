@@ -52,4 +52,4 @@ Here is the color palette I used for this project, listed from darkest to lighte
 
 This project is not licensed, but please contact me before using it. You can find my social media account and email address at [oyldrr.info](http://oyldrr.info/).
 
-Additionally, I spend most of my time listening to music in my Discord server. You can find me there as well, and I would appreciate it if you joined. Link: https://discord.gg/7PkR5D2R.
+Additionally, I spend most of my time listening to music in my Discord server. You can find me there as well, and I would appreciate it if you joined by clickling [here](https://discord.gg/7PkR5D2R).
