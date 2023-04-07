@@ -24,10 +24,10 @@ By the way, the project isn't yet completed. I'm currently working on it and exp
 
 - The design is colorful, minimalistic, and user-friendly
 - The program uses a scrollable card view to display data from the MySQL database instead of using DataGridView.
-- Add, edit, and delete session (screening) information - -(Not completely, It's on the way)- Added with VERSION BO2.0
-- Add, edit, and delete movie information - -(Not completely, It's on the way)- Added with VERSION BO2.0
-- Add, edit and delete customer information - -(Not completely, It's on the way)- Added with VERSION BO2.0
-- Invoice printing - -(It's on the way)- Added with VERSION BO2.0
+- Add, edit, and delete session (screening) information - ~~(Not completely, It's on the way)~~ Added with VERSION BO2.0
+- Add, edit, and delete movie information - ~~(Not completely, It's on the way)~~ Added with VERSION BO2.0
+- Add, edit and delete customer information - ~~(Not completely, It's on the way)~~ Added with VERSION BO2.0
+- Invoice printing - ~~(It's on the way)~~ Added with VERSION BO2.0
 - Dashboard & Reporting - (It's on the way)
 
 ## Color Pallette
