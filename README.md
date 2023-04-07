@@ -4,7 +4,9 @@ This is a simple yet functional cinema box office automation program created usi
 
 This is the first time I've used a UI framework in a C# WinForm application. I originally intended to start this project a day ago, but choosing a framework turned out to be much harder than I initially thought. However, I've been working on it for approximately 12 hours now, and I'm really close to finishing it. Although I intended to use the Krypton UI framework, I found that it wasn't making things easier, so I ended up using the default WinForm UI for everything except some buttons and combo boxes. I hope you like the design and colors.
 
-By the way, the project isn't yet completed. I'm currently working on it and expect to finish it on April 6th, 2023. However, I may update it from time to time for fun and to improve my skills.
+By the way, the project isn't yet completed. I'm currently working on it and expect to finish it on April 6th, 2023. However, I may update it from time to time for fun and improve my skills.
+
+Edit: I finished lots of thing i wanted to do but it's not completly over. So, I am not going to continue it until my exams over. 
 
 ## Requirements
 
